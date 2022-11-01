@@ -2,6 +2,7 @@ import './App.css';
 import React, { useState, useEffect } from 'react';
 import { Switch, Route } from 'react-router-dom'
 import Listings from '../Listings/Listings';
+import BriefArticle from '../BriefArticle/BriefArticle';
 
 const App = () => {
 
@@ -20,9 +21,16 @@ const App = () => {
           The state of the World - according to the New York Times
         </p>
       </header>
-      <div>
-        {articles.length > 0 ? <Listings articles={articles} /> : <p>....</p>}
-      </div>
+      <Switch>
+        <Route exact path="/">
+          <div>
+            {articles.length > 0 ? <Listings articles={articles} /> : <p>....</p>}
+          </div>
+        </Route>
+        <Route path="/article/:id">
+
+        </Route>
+      </Switch>
     </div>
   );
 }
