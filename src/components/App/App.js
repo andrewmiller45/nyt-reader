@@ -2,7 +2,7 @@ import './App.css';
 import React, { useState, useEffect } from 'react';
 import { Switch, Route } from 'react-router-dom'
 import Listings from '../Listings/Listings';
-import BriefArticle from '../BriefArticle/BriefArticle';
+import Detailed from '../DetailedArticle/Detailed';
 
 const App = () => {
 
@@ -23,11 +23,14 @@ const App = () => {
       </header>
       <Switch>
         <Route exact path="/">
-          <div>
-            {articles.length > 0 ? <Listings articles={articles} /> : <p>....</p>}
+          <div className='article-listings'>
+            {articles.length > 0 ? <Listings articles={articles} /> : <p>Loading....</p>}
           </div>
         </Route>
-        <Route path="/article/:id">
+        <Route path="/article/:title" render={({match}) => {
+          const articleMatch = articles.find((article) => article.title === match.params.title) 
+          return (<Detailed {...articleMatch}/>)
+        }}>
 
         </Route>
       </Switch>

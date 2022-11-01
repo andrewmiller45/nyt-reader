@@ -1,0 +1,26 @@
+.detailed-info {
+    height: 100vh;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.pulp-container {
+    padding: 10px;
+    border-radius: 2%;
+    width: auto;
+    height: auto;
+    background-color: white;
+    opacity: 80%;
+}
+
+#home {
+    opacity: 100%;
+    color: black;
+    background-color: aliceblue;
+}
+
+img{
+    height: 500px;
+}

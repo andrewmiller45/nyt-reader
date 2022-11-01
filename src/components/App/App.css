@@ -1,0 +1,11 @@
+p {
+    margin-left: 50px;
+}
+
+.listing-container{
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+    align-content: space-between;
+    flex-wrap: wrap;
+}
