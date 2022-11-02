@@ -16,10 +16,6 @@ const Nav = ({search, clear}) => {
                 />)
 
         }}/>
-
-            <NavLink exact to="/" className="navButton" onClick={()=> clear()}>
-                <button>Home</button>
-            </NavLink>
             
 
         </div>
