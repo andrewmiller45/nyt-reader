@@ -4,7 +4,7 @@ import './Nav.css'
 
 const Nav = ({search, clear}) => {
     return(
-        <div className="topSection">
+        <div className="nav">
 
         <Route exact path="/" render={()=>{
 

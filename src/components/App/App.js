@@ -26,17 +26,15 @@ const App = () => {
   useEffect(() => {
     fetch('https://api.nytimes.com/svc/topstories/v2/world.json?api-key=jXa2w66beJRj4StvRD75ZK80iZ0HOBiu')
       .then(r => r.json())
-      .then(data => setArticles(data.results))
+      .then(d => setArticles(d.results))
   }, [])
 
   return (
     <div className="App">
       <header className="App-header">
-        <p>
-          The state of the World - according to the New York Times
-        </p>
-      </header>
+      <h1>The state of the World - top articles from today's NYT</h1>  
       <Nav search={search} clear={clear}/>
+      </header>
       <Switch>
         <Route exact path="/">
           <div className='article-listings'>
