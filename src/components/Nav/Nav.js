@@ -1,8 +1,8 @@
 import React from 'react'
-import { NavLink, Route } from 'react-router-dom'
+import { Route } from 'react-router-dom'
 import './Nav.css'
 
-const Nav = ({search, clear}) => {
+const Nav = ({search}) => {
     return(
         <div className="nav">
 
@@ -12,7 +12,7 @@ const Nav = ({search, clear}) => {
                 <input 
                 type='search'
                 placeholder="Search Articles"
-                onChange={(event)=> search(event.target.value)}
+                onChange={(e)=> search(e.target.value)}
                 />)
 
         }}/>

@@ -19,10 +19,6 @@ const App = () => {
     setSearch(hits)
   }
 
-  const clear = () => {
-    setSearch([]);
-  }
-
   useEffect(() => {
     fetch('https://api.nytimes.com/svc/topstories/v2/world.json?api-key=jXa2w66beJRj4StvRD75ZK80iZ0HOBiu')
       .then(r => r.json())
@@ -32,8 +28,8 @@ const App = () => {
   return (
     <div className="App">
       <header className="App-header">
-      <h1>The state of the World - top articles from today's NYT</h1>  
-      <Nav search={search} clear={clear}/>
+      <h1 className='header'>The state of the World - top articles from today's NYT</h1>  
+      <Nav search={search}/>
       </header>
       <Switch>
         <Route exact path="/">
