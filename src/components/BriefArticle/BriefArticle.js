@@ -10,7 +10,7 @@ const Article = ({title, byline}) => {
         <h1>{title}</h1>
         <p>{byline}</p>
       </Link>
-      </div>
+    </div>
   )
 }
 

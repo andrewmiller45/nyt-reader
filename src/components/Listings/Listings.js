@@ -13,8 +13,6 @@ const Listings = ({articles}) => {
         )
     })
 
-    
-
   return (
     <div className='listing-container'>{articleList}</div>
   )

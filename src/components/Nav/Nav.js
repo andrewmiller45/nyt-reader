@@ -12,7 +12,7 @@ const Nav = ({search}) => {
                 <input 
                 type='search'
                 placeholder="Search Articles"
-                onChange={(e)=> search(e.target.value)}
+                onChange={(event)=> search(event.target.value)}
                 />)
 
         }}/>
