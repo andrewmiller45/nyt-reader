@@ -48,16 +48,3 @@ const App = () => {
 }
 
 export default App;
-
-
-//identify known bugs in the README
-//section speaking about adversity faced during the takehome test
-//possible extensions to do with more time
-
-// eval for tomorrow 
-// 1. complete readme
-// 2. semantic improvements in variable names
-// 3. try and fix some of the bugs in your code!
-// 4. tolowercase() the search feature
-
-// look out for potential url bugs in odd title naming convention
