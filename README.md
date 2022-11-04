@@ -12,8 +12,7 @@ This project was a challenge to complete a take-home style assesment in ~8 hours
 
 ### Challenges faced
 
-- I forgot to set the `, [] )` at the end of my useEffect hook, which was causing an infinite loop on my API call.  This caused the NYT API to lock me out. several times, before I realized where my error was.  Shoutout to my friends in study hall.
-- 
+- I forgot to set the `, [] )` at the end of my useEffect hook, which was causing an infinite loop on my API call.  This caused the NYT API to lock me out several times, before I realized where my error was.  Shoutout to my friends in study hall.
 
 ### Functions and State Management 
 
