@@ -11,7 +11,7 @@ const App = () => {
   const [searches, setSearch] = useState([])
 
   const search = (query) => {
-    let hits = articles.filter(article => article.title.includes(query))
+    let hits = articles.filter(article => article.title.toLowerCase().includes(query.toLowerCase()))
 
     if(!hits.length){
       hits = [{title: 'No matches found', multimedia: []}]
